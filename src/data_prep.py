@@ -1,3 +1,8 @@
+# NOTE:
+# We model from a team-centric perspective instead of ±1 encoding.
+# Opponent fixed effects and is_home are included to control for context.
+# This is equivalent to adjusted plus-minus under a reparameterization.
+
 import pandas as pd
 import numpy as np
 

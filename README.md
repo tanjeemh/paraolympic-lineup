@@ -1,13 +1,21 @@
 # Wheelchair Rugby Coach Dashboard (Streamlit)
 
-## What this does
-- Learns player on-court impact from stint data (goals/minutes + lineups)
-- Predicts best 4-player lineups under the 8-point rule
-- Allows coach scenarios:
-  - injuries/unavailable players
-  - fatigue over time
-  - min/max minutes and fairness rotation
-- Generates a rotation plan + charts
+## Overview
+This project implements a coach-facing decision support system for wheelchair rugby lineup optimization.  
+The tool estimates individual player impact from stint-level game data, evaluates valid four-player lineups under the official 8-point classification rule, and supports both static lineup selection and dynamic rotation planning.
+
+The application is designed to bridge **descriptive analytics**, **predictive modeling**, and **prescriptive optimization** in a single interactive workflow.
+
+## What This Tool Does
+- Learns player on-court impact from stint-level data (goals, minutes, lineups)
+- Estimates player contributions using **ridge regression**
+- Enumerates and ranks valid 4-player lineups under classification constraints
+- Supports coach scenarios:
+  - Injured / unavailable players
+  - Fatigue-aware rotation planning
+  - Fairness and minute allocation constraints
+- Optionally integrates a **MATLAB MILP solver** for exact lineup optimization
+- Provides interactive visualizations and tables via Streamlit
 
 ## Setup
 1) Put CSV files in:

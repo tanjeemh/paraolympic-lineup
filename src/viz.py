@@ -40,3 +40,9 @@ def fig_schedule_timeline(schedule_df: pd.DataFrame):
     fig.update_layout(title="Rotation Plan Timeline (each block selects a lineup)", showlegend=False)
     fig.update_yaxes(visible=False)
     return fig
+
+def fig_lineup_comparison(milp_lineup, heuristic_lineup):
+    return {
+        "MILP": milp_lineup,
+        "Heuristic": heuristic_lineup
+    }
