@@ -11,10 +11,12 @@ The application bridges:
 - Predictive modeling (adjusted plus-minus via ridge regression)
 - Prescriptive optimization (heuristic rotation planning and exact MILP optimization)
 
+If you are a coach looking to use our app, we made it super simple for you to use! Follow steps 1 and 2!
+
 ---
 
 ## Repository Structure
-
+```
 PARALYMPIC-LINEUP/
 │
 ├── app.py                     # Streamlit coach dashboard
@@ -49,10 +51,10 @@ PARALYMPIC-LINEUP/
     ├── milp_bridge.py
     ├── viz.py
     └── model_experiments.py
-
+```
 ---
 
-## Environment Setup
+## 1) Environment Setup
 
 Install dependencies from the project root:
 
@@ -60,7 +62,7 @@ Install dependencies from the project root:
 
 ---
 
-## Running the Streamlit Dashboard
+## 2) Running the Streamlit Dashboard
 
 The Streamlit application is the primary interface for interacting with the model.
 
