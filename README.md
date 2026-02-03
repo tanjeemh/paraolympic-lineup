@@ -14,7 +14,7 @@ The application bridges:
 ---
 
 ## Repository Structure
-
+```
 PARALYMPIC-LINEUP/
 │
 ├── app.py                     # Streamlit coach dashboard
@@ -49,7 +49,7 @@ PARALYMPIC-LINEUP/
     ├── milp_bridge.py
     ├── viz.py
     └── model_experiments.py
-
+```
 ---
 
 ## Environment Setup
